@@ -17,6 +17,7 @@ public class Task2 extends Activity {
         WebView browser = (WebView)findViewById(R.id.webView);
         WebSettings webSettings = browser.getSettings();
         webSettings.setJavaScriptEnabled(true);
+        webSettings.setDomStorageEnabled(true);
         browser.loadUrl("file:///android_asset/CLUEDO.htm");
     }
 
